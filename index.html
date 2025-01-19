@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <main>
+  <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A warm hello from the Luch Responsible this week!</p>
+
+                <p>I am a busy bee lately —two jobs keeping me busy from day to evening— but I couldn't miss the chance to hear what you think about today’s lunch.
+                This menu wasn’t just a random pick. I’ve spent time chatting with local shops right here in Sorø, visiting them a few times to craft something I hope you’d enjoy.
+                Now, I’d love to hear your thoughts on today’s lunch. Just a few moments of your time could make a big difference. Your feedback can help the next person in charge create an even better lunch experience in the weeks to come. Plus, it lets us choose ingredients more thoughtfully and reduce food waste!
+                </p><p>Answers can be anonymous, or feel free to include your name in the end if you'd like. I just want to know what you think.
+                </p><p>Curious about my little food adventures? You can check out my very first blog here: [www.]
+                </p>
+
+        <fieldset>
+                <legend>🍴 What did you love most about your meal? (Check all that apply!)</legend>
+                <div class="checkbox-group">
+                        <label for="taste">
+                            <input type="checkbox" id="taste" name="reason" value="taste">Taste</label>
+                        <label for="variety">
+                            <input type="checkbox" id="variety" name="reason" value="variety">Variety</label>
+                        <label for="freshness">
+                            <input type="checkbox" id="freshness" name="reason" value="freshness">Freshness</label>
+                        <label for="healthy-options">
+                            <input type="checkbox" id="healthy-options" name="reason" value="healthy-options">Healthy options</label></div>
+        </fieldset>
+
+        <fieldset>
+                <legend id="food-warm-question">🌡️ Was the food warm enough when you ate it?</legend>
+                <label for="food-warm-dropdown">
+<select id="food-warm-dropdown" name="food-warm" required>
+  <option value="disabled selected">Choose the option that best fits</option>
+  <option value="just-right!">Yes, just right! 😋🤌</option>
+  <option value="not-warm">No, it wasn’t. 😔</option>
+  <option value="somewhat-warm">Somewhat warm. 🙄</option></select>
+</label>
+</fieldset>
+
+  <fieldset>
+    <legend>🤔 Were you hungry when you started eating?</legend>
+    <label>                
+  <input
+  type="radio"
+  id="yes-hungry"
+  value="yes"
+  name="hungry"
+  required>Yes, I was ready to dig in!</label>  
+
+  <label>
+  <input
+  type="radio"
+  id="no-hungry"
+  value="no"
+  name="hungry"
+  required>No, not really.</label></fieldset>
+
+  <fieldset>
+        <legend>🍽️ Did you finish your meal?
+        <label>
+        <input
+        type="radio"
+        id="finished-yes"
+        value="yes"
+        name="meal-finished"
+        required>Yes, every bite!</label>  
+
+        <label>
+        <input
+        type="radio"
+        id="finished-no"
+        value="no"
+        name="meal-finished"
+        required>No, not quite.</label>
+
+        <label>
+        <input
+        type="radio"
+        id="finished-half"
+        value="half"
+        name="meal-finished"
+        required>Half of it.</label>
+
+        <label>
+        <input
+        type="radio"
+        id="finished-most"
+        value="most"
+        name="meal-finished"
+        required>More than 50%</label>
+
+        <label>
+        <input
+        type="radio"
+        id="finished-less"
+        value="less"
+        name="meal-finished"
+        required>Less than 50%</label></fieldset>
+
+<fieldset>
+        <legend>😌 Did you feel full after eating?
+        <label>
+        <input
+        type="radio"
+        id="full-yes"
+        value="yes"
+        name="fullness"
+        required>Yes, perfectly satisfied!</label>  
+              
+        <label>
+        <input
+        type="radio"
+        id="full-no"
+        value="no"
+        name="fullness"
+        required>No, still a bit hungry.</label></fieldset>
+
+<fieldset>
+        <legend>👀 Did the food look good to you? Was it exciting to see on your plate?
+        <label>
+        <input
+        type="radio"
+        id="looked-good-yes"
+        value="yes"
+        name="looked-good"
+        required>Yes, it looked amazing!</label>  
+                      
+        <label>
+        <input
+        type="radio"
+        id="looked-good-no"
+        value="no"
+        name="looked-good"
+        required>No, it didn’t catch my eye.</label></fieldset>    
+      
+<fieldset>
+<label id="name-label" for="name">Name:</label>
+<input
+type="text"
+id="name"
+name="name"
+placeholder="You may remain anonymous">
+
+<label id="email-label" for="email">Email:</label>
+  <input
+  type="email"
+  id="email"
+  name="email"
+  placeholder="You may remain anonymous">
+
+  <label for="comments">Always happy to hear your comments or suggestions ...</label>
+  <textarea
+  id="comments"
+  name="comments"
+  placeholder="Enter your comments here"></textarea>
+
+  <button id="submit"
+  type="submit">Submit</button>
+</fieldset>
+  </form>
+  </main>
+  </body>
+  </html>
